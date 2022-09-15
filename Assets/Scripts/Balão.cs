@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Balão : MonoBehaviour
 {
+    public static System.Action EventoBalãoDestruido=null;
     public Rigidbody2D RigidBodyBalon;
     public float velocidadeMaxima= 1.0f;
     void Start()
@@ -13,6 +14,12 @@ public class Balão : MonoBehaviour
 
     void Update()
     {
-        
+    }
+    void OnTriggerEnter2D(Collider2D outro){
+        Destroy(gameObject);
+        Destroy(outro.gameObject);
+        if(EventoBalãoDestruido!=null){
+            EventoBalãoDestruido();
+        }
     }
 }

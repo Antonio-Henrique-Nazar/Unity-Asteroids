@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6539252467841242755}
   - component: {fileID: 6539252467841242758}
   - component: {fileID: 6539252467841242759}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Bal\xE3o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
